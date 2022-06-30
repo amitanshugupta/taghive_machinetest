@@ -1,0 +1,13 @@
+package com.taghive.networkInterfaces;
+
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.http.GET;
+
+public interface RetrofitApi {
+
+    @GET("24hr")
+    Call<ResponseBody> getTickers();
+
+}
